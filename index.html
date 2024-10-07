@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS Calculator</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="calculator">
+			<div class="result">
+				<div class="history">
+					<p id="history-val"></p>
+				</div>
+				<div class="output">
+					<p id="output-val"></p>
+				</div>
+			</div>
+			<div class="keyboard">
+				<table>
+					<tr class="cal_func cal_func_brdr">
+						<td><button class="memory" id="memoryClear" onclick="memoryClear()">MC</button></td>
+						<td><button class="memory" onclick="memoryRead()">MR</button></td>
+						<td><button class="memory" onclick="memoryPlus()">M+</button></td>
+						<td><button class="memory" onclick="tenX()">10<sup>x</sup></button></td>
+					</tr>
+					<tr class="cal_func">
+						<td><button id="operator" onclick="operator('%')">%</button></td>
+						<td><button onclick="root()"><img src="images/root.png"></button></td>
+						<td><button onclick="square()"><i class="fa fa-superscript"></i></button></td>
+						<td><button class="oneByX" onclick="ondiv()"><sup>1</sup>/<sub>x</sub></button></td>
+					</tr>
+					<tr>
+						<td><button onclick="clrOutput()">CE</button></td>
+						<td><button onclick="clr()">C</button></td>
+						<td><button onclick="backSpace()"><img src="images/cross.png"></button></td>
+						<td><button class="division" id="operator" onclick="operator('/')"><img src="images/divition.png"></button></td>
+					</tr>
+					<tr>
+						<td><button class="number" onclick="keyNum('7')">7</button></td>
+						<td><button class="number" onclick="keyNum('8')">8</button></td>
+						<td><button class="number" onclick="keyNum('9')">9</button></td>
+						<td><button class="multiply" id="operator" onclick="operator('*')"><img src="images/multi2.png"></button></td>
+					</tr>
+					<tr>
+						<td><button class="number" onclick="keyNum('4')">4</button></td>
+						<td><button class="number" onclick="keyNum('5')">5</button></td>
+						<td><button class="number" onclick="keyNum('6')">6</button></td>
+						<td><button class="minus" id="operator" onclick="operator('-')"><img src="images/minus2.png"></button></td>
+
+					</tr>
+					<tr>
+						<td><button class="number" onclick="keyNum('1')">1</button></td>
+						<td><button class="number" onclick="keyNum('2')">2</button></td>
+						<td><button class="number" onclick="keyNum('3')">3</button></td>
+						<td><button class="plus" id="operator" onclick="operator('+')"><img src="images/plus2.png"></button></td>
+					</tr>
+					<tr>
+						<td><button class="plusminus" onclick="plusminus()"><img src="images/plusminus.png"></button></td>
+						<td><button class="number" onclick="keyZero()">0</button></td>
+						<td><button class="point" onclick="keyPoint()"><img src="images/point.png"></button></td>
+						<td><button onclick="equal()"><img src="images/equal.png"></button></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script src="custom.js"></script>
+</body>
+</html>

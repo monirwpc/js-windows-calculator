@@ -1,0 +1,124 @@
+body {
+	margin: 50px 0;
+	padding: 0;
+	outline: 0;
+	font-size: 20px;
+	/*font-family: 'PT Serif', serif;*/
+}
+.container {
+	max-width: 960px;
+	margin: 0 auto 0 auto;
+}
+*{
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+.calculator {
+	width: 300px; 
+	height: auto;
+	padding: 20px 10px 10px 10px;
+	border:1px solid #ccc;
+	display: block;
+	margin: 0 auto;
+	border-radius: 5px;
+	text-align: center;
+	background: rgba(0,0,0, .1);
+	box-shadow: 0px 0px 8px 0px black;
+}
+.result {
+	text-align: right;
+	max-width:295px;
+	height: 80px;
+	padding:10px 10px;
+	box-sizing: border-box;
+	overflow: hidden;
+	background: #fff;
+	margin-bottom: 10px;
+}
+.history {
+	height: 30px;
+}
+.output {
+	height: 50px;
+	font-size: 25px;
+	/*font-weight: bold;*/
+}
+.cal_form {
+	width: 100%;
+	display: inline-block;
+	overflow: hidden;
+}
+.calculator table {
+	border-collapse: collapse;
+}
+.calculator table tr td {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+.calculator table tr td button {
+	width: 74px;
+	height: 60px;
+	font-size: 18px;
+	background: transparent;
+	border:none;
+	outline: 0;
+
+}
+.calculator table tr td button:hover {
+	background: #CFCFCF;
+}
+.calculator table tr td button.number {
+	font-weight: bold;
+	font-size: 22px;
+	/*background: #CFCFCF;*/
+}
+.calculator table tr td button img {
+	width: 21px;
+}
+.calculator form input {
+    width: 293px;
+    height: 45px;
+    font-size: 25px;
+    margin-left: -3px;
+    padding:0 10px;
+    box-sizing: border-box;
+}
+.point img {
+	width: 5px !important;
+}
+.plusminus img {
+	width: 40px !important;
+}
+.plus img {
+	width: 16px !important;
+}
+.minus img {
+	width: 16px !important;
+}
+.division img {
+	width: 16px !important;
+}
+.multiply img {
+	width: 15px !important;
+}
+.calculator table .cal_func {
+	background: #F2F2F2;
+}
+.calculator table .cal_func_brdr {
+	border-bottom: 1px solid #ccc;
+}
+.calculator table .cal_func td button {
+	margin: 0;
+	padding: 0;
+}
+.oneByX {
+	font-style: italic;
+	font-family: 'PT Serif', serif;
+	font-weight: 700;
+}
+.memory {
+	font-size: 18px !important;
+	font-family: 'PT Serif', serif;
+}
